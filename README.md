@@ -121,3 +121,4 @@ Learning Points
 - Probably can edit the dataset more precise, the context for "multiple text bubbles" are a simple `\n` currently
 - 90% of my time was used to set up unsloth on my Windows11 PC. Turns out it uses triton which is windows INCOMPATIBLE. Ended up using WSL (Ubuntu) to run.
 - You can use [text-generation-webui](https://github.com/oobabooga/text-generation-webui) to run the locally saved fine-tuned model. However running on the notebook using unsloth `FastLanguageModel.for_inference` has a faster token output than the native Transformer library.
+- Ran 10,000 steps instead of 1 epoch training as it took 4 hours. Seems like the loss value converges at around 1.04
